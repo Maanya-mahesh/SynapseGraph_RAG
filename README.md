@@ -48,7 +48,7 @@ Standard Retrieval-Augmented Generation (RAG) engines rely on naive fixed-charac
 - Partition graph clusters using the **Leiden Algorithm** to build multi-level community summaries.
 ### 4. Dual-Route Hybrid Retrieval & RRF (`src/retrieval/`)
 - Combines sparse SPO graph traversal with dense vector search (ChromaDB/FAISS).
-- Merges candidate rankings using **Reciprocal Rank Fusion (RRF)**: RRF_Score(d) = sum_{m in M}->{ 1 / {k + r_m(d) }
+- Merges candidate rankings using **Reciprocal Rank Fusion (RRF)**:RRF_Score(d) = sum_{m in M}->{ 1 / {k + r_m(d) }
 
 
 ## Empirical Performance Summary
@@ -64,8 +64,8 @@ Standard Retrieval-Augmented Generation (RAG) engines rely on naive fixed-charac
 
 ### 1. Clone & Setup Environment
 ```bash
-git clone [suspicious link removed]
-cd nexus-rag
+git clone 
+cd SynapseGraph_rag
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
